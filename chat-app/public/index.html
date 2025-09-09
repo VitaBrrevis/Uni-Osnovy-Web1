@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Socket.IO Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="join">
+    <input id="username" placeholder="user1">
+    <input id="room" placeholder="room1">
+    <button id="joinBtn">Приєднатись</button>
+    <div id="error" class="error" aria-live="polite"></div>
+  </div>
+
+  <div class="chat hidden">
+    <aside class="sidebar">
+      <div class="card">
+        <strong>Room:</strong> <span id="roomName">-</span><br>
+        <strong>Username:</strong> <span id="me">-</span>
+      </div>
+      <div class="card">
+        <div class="card-title">Users in the chatroom</div>
+        <ul id="userList" class="list"></ul>
+      </div>
+    </aside>
+    <main class="main">
+      <ul id="messages" class="messages"></ul>
+      <form id="msgForm" autocomplete="off">
+        <input id="msgInput" placeholder="Message">
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+</html>

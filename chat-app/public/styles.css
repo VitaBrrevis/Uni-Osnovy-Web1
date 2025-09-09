@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    background: #f7f7f7;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.join {
+    max-width: 280px;
+    margin: auto;
+    padding: 16px;
+    background: #3b95a8;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.join input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 0;
+    border-radius: 6px;
+}
+
+.join button {
+    width: 100%;
+    padding: 10px;
+    background: #f6b625;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.chat {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+}
+
+.sidebar {
+    width: 280px;
+    background: #3b95a8;
+    padding: 16px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.card {
+    background: #a3cbe0;
+    color: #183b4f;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    border-radius: 6px;
+    overflow: auto;
+    max-height: 240px;
+}
+
+.list li {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 60vh;
+    overflow: auto;
+}
+
+.msg {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.msg .meta {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.msg .time {
+    font-weight: 400;
+    opacity: .75;
+}
+
+.msg.me {
+    background: #2e9d57;
+}
+
+.msg.other {
+    background: #f2b632;
+    color: #243b56;
+}
+
+.msg.admin {
+    background: #2d90a6;
+}
+
+#msgForm {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+#msgInput {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+#msgForm button {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 6px;
+    background: #f6b625;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
